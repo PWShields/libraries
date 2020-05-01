@@ -10,6 +10,8 @@
 - Maven
 - Lombok
 - H2 
+- Thymeleaf
+- Webjars
 
 #### Datasource
 
@@ -23,3 +25,4 @@ The database is populated by Spring boot reading the data.sql file.
 returns all records
 - http://localhost:8080/libraries/1 returns the record with id=1
 - http://localhost:8080/h2-console will take you to the database console, the password is specified in application.properties
+- http://localhost:8080/demo will take you to a HTML page that demonstrates Thymeleaf as a view technology
