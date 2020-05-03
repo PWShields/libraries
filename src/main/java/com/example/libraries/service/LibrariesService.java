@@ -21,12 +21,10 @@ public class LibrariesService {
         this.librariesRepository = librariesRepository;
     }
 
-
     public Libraries findById(Long id) {
         return librariesRepository.findById(id).orElse(null);
     }
 
-    @GetMapping("/all")
     public List<Libraries> findAll(){
         return (List<Libraries>) librariesRepository.findAll();
     }
